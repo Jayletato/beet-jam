@@ -5,6 +5,23 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(
+          'cheeseee',
+          style: TextStyle(
+            color: Colors.black,
+            fontSize: 18,
+            fontWeight: FontWeight.bold
+          ),
+        ),
+        backgroundColor: Colors.green,
+        centerTitle: true,
+        leading: Container(
+          color: const Color.fromARGB(255, 238, 163, 188),
+          margin: EdgeInsets.all(10),
+        ),
+      ),
+    ) ; // scaffold
   }
 }
